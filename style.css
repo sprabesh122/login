@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Inspiration&family=Love+Light&family=Mea+Culpa&family=Oooh+Baby&family=Pushster&family=Zen+Antique&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  position: absolute;
+  top: 32%;
+  left: 9%;
+  border: 2px solid black;
+  /* text-align: center; */
+  padding: 10px 10px;
+}
+
+h1 {
+  font-family: "Imperial Script", cursive;
+  font-family: "Inspiration", cursive;
+  font-family: "Love Light", cursive;
+  font-family: "Mea Culpa", cursive;
+  font-family: "Oooh Baby", cursive;
+  font-family: "Pushster", cursive;
+  font-family: "Zen Antique", serif;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 2px;
+  font-size: 40px;
+  overflow: auto;
+  text-decoration: underline;
+  background-color: moccasin;
+}
+
+.container {
+  background-color: moccasin;
+  text-align: center;
+  padding: 20px;
+}
+
+.input-div {
+  /* inline-block makes both of them align adjacent to each other */
+  display: inline-block;
+}
+
+.inp {
+  height: 46px;
+  padding: 15px;
+  margin: 12px;
+  font-size: 30px;
+  font-weight: none;
+  width: 325px;
+  text-align: center;
+}
+
+label {
+  font-size: 40px;
+  /* font-weight: bold; */
+}
