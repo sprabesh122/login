@@ -4,6 +4,8 @@ var cel = document.getElementById('cel');
 var fah = document.getElementById('fah');
 var kel = document.getElementById('kel');
 
+var decimalDigits = 2;
+
 // For fahrenheit part
 
 cel.addEventListener('input', function(){
@@ -17,7 +19,7 @@ cel.addEventListener('input', function(){
     // Checking for number of decimal places
 
     if(!Number.isInteger(f)){
-        f = f.toFixed(4);
+        f = f.toFixed(decimalDigits);
     }
 
     // Changing the value of fah
@@ -29,7 +31,7 @@ cel.addEventListener('input', function(){
     let k = (c * 1) + 273.15;
 
     if(!Number.isInteger(k)){
-        k = k.toFixed(4);
+        k = k.toFixed(decimalDigits);
     }
 
     kel.value = k;
@@ -47,7 +49,7 @@ fah.addEventListener('input', function(){
     // Checking for number of decimal places
 
     if(!Number.isInteger(c)){
-        c = c.toFixed(4);
+        c = c.toFixed(decimalDigits);
     }
  
     cel.value = c; // changing to celsius
@@ -55,7 +57,7 @@ fah.addEventListener('input', function(){
     let k =   (f - 32) * 5/9 + 273.15;
 
     if(!Number.isInteger(k)){
-        k = k.toFixed(4);
+        k = k.toFixed(decimalDigits);
     }
 
     kel.value = k;
@@ -72,7 +74,7 @@ kel.addEventListener('input', function(){
     let c = (k - 273.15);
 
     if(!Number.isInteger(c)){
-        c = c.toFixed(4);
+        c = c.toFixed(decimalDigits);
     }
 
     cel.value = c;
@@ -82,7 +84,7 @@ kel.addEventListener('input', function(){
     let f = (k - 273.15) * 9/5 + 32;
 
     if(!Number.isInteger(f)){
-        f = f.toFixed(4);
+        f = f.toFixed(decimalDigits);
     }
 
     fah.value = f;
